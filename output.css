@@ -1,0 +1,613 @@
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+     tab-size: 4;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+
+
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  max-width: 100%;
+ 
+}
+
+/*styling the navigation area*/
+
+nav{
+  display: flex;
+  align-items: right;
+  background: linear-gradient(0deg, rgba(172,178,231,1) 3%, rgba(163,172,224,1) 6%, rgba(26,85,130,1) 87%);
+  background-size: cover;
+  height:25vh ;
+}
+
+/*styling the logo*/
+
+#logo1{
+  margin-top: 20px;
+  margin-left: 35%;
+  height: 80px;
+  width: 80px;
+  border-radius:10px ;
+}
+
+#CompanyId{
+  display: flex;
+  margin: 5px;
+  margin-left:20%;
+}
+
+#logo1:hover{
+  height: 85px;
+  width: 85px;
+}
+
+nav li{
+  font-size: 20px;
+  list-style-type: none;
+  position: relative;
+}
+
+nav li:hover{
+  color: rgb(198, 207, 214);
+  font-size: 23px;
+}
+
+#menuItems a{
+  text-decoration: none;
+  margin-right: 30px;
+  color: rgb(212, 218, 240);
+}
+
+#menuItems{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+/* implementing the hover dropdown lists*/
+
+ul{
+  display: block;
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+ul li:hover .dropdown{
+  display: block;
+  background: linear-gradient(0deg, rgba(172,178,231,1) 3%, rgba(163,172,224,1) 6%, rgba(26,85,130,1) 87%);
+  z-index: 999;
+}
+
+ul li a{
+  display: block;
+  text-align: left;
+  padding: 2px;
+  text-decoration: none;
+  color:whitesmoke ;
+}
+
+ul li ul.dropdown{
+  display: none;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  z-index: 0;
+}
+
+ul li ul.dropdown li{
+  display: block;
+  text-align: left;
+  padding: 8px;
+}
+
+.media{
+  height: 25px;
+  width: 25px;
+}
+
+.media:hover{
+  height: 30px;
+  width: 30px;
+}
+
+#location{
+  width: 100px;
+}
+
+#FindUs, #location{
+  width: 100px;
+}
+
+#Contacts{
+  width: 150px;
+  height: 10
+}
+
+#Contacts:hover{
+  font-size: 17px;
+}
+#login-button{
+  height: 30px;
+  width: 70px;
+  border: 2px, solid,  rgb(158, 165, 177);
+  color: rgb(212, 219, 225);
+  background-color: transparent;
+  font-size: 20px;
+  margin-top: 10vh;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0s;
+  
+}
+#login-button:hover{
+ 
+  color: rgb(237, 241, 245);
+  background-color:  rgb(50, 100, 185);
+}
+.login-wrapper{
+  height: 400px;
+  width: 450px;
+  background-color: transparent;
+  border: 2px, solid, rgb(104, 104, 197);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 25px rgb(102, 149, 203);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form h2{
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(73, 73, 150);
+}
+.input-box {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: ranslateY(-50%);
+  color: rgb(53, 53, 76);
+  font-weight: 500;
+}
+.input-box input :focus,
+.input-box input :valid label
+.input-box {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.input-box .icon{
+ position: absolute;
+ color: rgb(104, 134, 212);
+ right: 10px;
+ line-height: 60px;
+
+}
+/* styling h elements*/
+
+h1{
+  color: rgb(230, 138, 40);
+  margin-left: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+h2{
+  color: rgb(32, 29, 29);
+  font-size: 25px;
+}
+
+h3{
+  font-size: 20px;
+  color: rgb(216, 221, 239);
+}
+
+h4{
+  color: rgb(228, 240, 250);
+  font-size: large;
+}
+
+span{
+  color: rgb(50, 100, 185);
+}
+
+body{
+  background-color: rgb(172, 178, 230);
+  width: 100vw;
+}
+
+main{
+  display: inline-block;
+}
+
+#userinfo{
+  display: inline-block;
+}
+
+/* styling the banner image*/
+
+#bannerImage{
+
+  background-image:url(./Victor_muitaGalaxyM320091120247_17.jpg);
+  height: 60vh;
+  background-size: cover;
+}
+
+/*styling the About company div*/
+
+#About1{
+  display: inline-block;
+  padding: 10px;
+  margin-left: 4px;
+  font-size: 18px;
+  margin-top: 5vh;
+  border: 1px solid black;
+  border-radius:10px ;
+  width: 30vw;
+  height: 100%;
+  background-color: rgb(108, 135, 194);
+}
+
+#About1:hover{
+  background-color: rgb(96, 129, 197);
+}
+
+/*implementing pseudo-element selector*/
+
+p::first-line{
+  color: rgb(201, 207, 235);
+}
+
+/* styling the trip cost section*/
+
+section{
+  display: inline-block;
+  width: 65vw;
+  margin: 10px;
+  height: 100%;
+}
+
+.table-wrap, .outer-wrap{
+  display: inline-block;
+  width: 65vw;
+}
+
+.class{
+  flex-wrap: wrap;
+}
+
+section:hover{
+  cursor: pointer;
+}
+
+table{
+  margin-top: 5vh;
+  width: 65vw;
+  border-collapse: collapse;
+}
+
+tr:nth-child(even){
+  background-color: rgb(109, 132, 182);
+}
+
+tr:nth-child(even):hover{
+  background-color: rgb(59, 69, 152);
+  color: antiquewhite;
+}
+
+tr:nth-child(odd):hover{
+  background-color: rgb(59, 69, 152);
+  color: antiquewhite;
+}
+
+/* styling the palms hotel image*/
+
+#Hotel{
+  display: inline-block;
+  margin: 5px;
+  height: 77vh;
+  width: 50vw;
+  border-radius: 10px;
+}
+
+#hotel1{
+  display: inline-block;
+  text-align: center;
+  border:rgb(115, 149, 200) 2px solid ;
+  border-radius:10px;
+}
+
+/* styling the registration form*/
+
+.form2{
+  display: inline-block;
+  width: 38vw ;
+  text-align: center;
+  margin: 10px;
+  height: 55vh;
+  margin-left: 3vw;
+}
+
+footer{
+  background-color:rgb(203, 219, 237) ;
+  text-align: center;
+  padding: 5px;
+}
+
+form:hover{
+  cursor: pointer;
+}
+
+.Formhotel{
+  display: inline-block;
+  padding: 10px;
+}
+
+#Form1{
+  display: inline-block;
+  border:rgb(53, 105, 184) 2px solid ;
+  border-radius:10px ;
+  height: 100%;
+  background-color: rgb(99, 136, 190);
+  width: 50;
+}
+
+th, td{
+  padding: 1rem;
+  text-align: left;
+}
+
+caption{
+  font-weight:bolder;
+}
+
+/* implementiong hover effects on the form*/
+fieldset{
+  border: transparent;
+}
+fieldset:nth-child(even){
+  background-color: rgb(115, 149, 200);
+  width: 90%;
+}
+
+fieldset:nth-child(even):hover{
+  background-color: rgb(126, 165, 224);
+}
+
+/* styling the Quiz div*/
+
+#quiz{
+  position: relative;
+  left:5vw ;
+  font-size: 1.7rem;
+  height:60vh;
+  width: 40vw;
+  background-color: rgb(85, 111, 167);
+  margin: 5px;
+  display: inline-block;
+  border-radius: 15px;
+  padding:20px ;
+}
+
+#quiz:hover{
+  background-color: rgb(100, 131, 185);
+  cursor: pointer;
+}
+
+/* styling the submit button of the Quiz*/
+
+.submit{
+  font-size: 13px;
+  padding: 3px;
+  align-items: center;
+  margin-top: 30px;
+  height: 30px;
+  width: 60px;
+  color: rgb(255, 255, 255);
+  border-radius: 10%;
+}
+
+button[type="submit"]{
+  background-color:rgb(120, 160, 220) ;
+}
+
+.submit:hover{
+  background-color: rgb(70, 119, 192);
+}
+
+.QuizAll{
+  padding: 10px;
+}
+.video{
+  position: absolute;
+  right: 5rem;
+  height: 60vh;
+  width: 40vw;
+  background-color:  rgb(85, 111, 167);
+  border-radius: 15px;
+  padding:10px ;
+  display: inline-block;
+}
+video{
+  height: 53vh;
+  width: 39vw;
+  background-color:  rgb(231, 233, 238);
+  border-radius: 15px;
+}
+
+/* styling the footer section*/
+
+/* implementina Media Query*/
+
+@media (min-width: 250px) and (max-width: 1030px){
+  nav{
+    width: 200vh;
+    position: fixed;
+    height: 23vh;
+    opacity: 96%;
+  }
+
+  #About1{
+    display:block;
+    width:90vw;
+    max-width:100%;
+    margin-left:3vw;
+  }
+
+  section{
+    height: 100%;
+    width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .outer-wrap{
+    border:solid black 1px ;
+    border-radius: 10px;
+    margin: 3vw;
+    width: 90vw;
+    padding: 1rem;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .table-wrap{
+    width:85vw ;
+    max-width: 80vw;
+    overflow-x: scroll;
+  }
+
+  #Hotel{
+    margin: 0px;
+    width: 85vw;
+  }
+
+  #hotel1{
+    width: 85vw;
+    margin: 2vw;
+  }
+
+  form{
+    width: 85vw;
+  }
+
+  #Form1{
+    width:90vw;
+  }
+
+  #quiz{
+    margin: 2vw;
+    width: 90vw;
+  }
+
+  #menuItems{
+    margin-left: 25%;
+    font-size: small;
+    margin-top: 10px;
+  }
+
+  nav li{
+    font-size: 15px;
+  }
+
+  nav li:hover{
+    font-size: 16px;
+  }
+
+  #logo1{
+    height: 60px;
+    width: 60px;
+    margin: 5vw;
+    margin-bottom:0px ;
+    margin-left: 40px;
+  }
+
+  #logo1:hover{
+    height: 65px;
+    width: 65px;
+  }
+
+  #CompanyId{
+    font-size: 20px;
+  }
+}
+
+
+
+
+

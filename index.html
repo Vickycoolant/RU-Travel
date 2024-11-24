@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><RU-Travels></RU-Travels></title>
+    <!--linking the css file-->
+    <link rel="stylesheet" href="./output.css">
+    <!--linking the javascript file-->
+    <script src="Class-activity.js" defer></script>
+    
+</head>
+<body>
+    
+    <!-- building the navigation bar-->
+    <nav>
+        <div class="div1">
+            <img class="logo1" id="logo1" src="./logo1.webp" alt="">
+            <h1 id="CompanyId">RU <span>Travels</span> </h1>
+        </div>
+       <!-- implementing dropdown on hover effect on the list items in coorporation with CSS-->
+       <ul id="menuItems">
+          <li><a href="">Home</a></li>
+          <li><a href="">Location </a>
+            <div id="location" class="Menu">
+          <ul class="dropdown">
+                <li><a href="">Nairobi</a></li>
+                 <li><a href="">Malindi</a></li>
+                 <li><a href="">Dubai</a></li>
+                 <li><a href="">maldives</a></li>
+            </ul>
+        </div></li>
+          <li><a href="">Find Us</a>
+            <div id="FindUs" class="Menu">
+              <!-- implementing social media logos as hyper-objects to foward clients to my social media accounts -->
+        <ul class="dropdown">
+            <li><a href="https://x.com/VictorMuita2?t=wVyZX3h7RPwoBLF-IQYWkg&s=08"><img class="media" src="./xlogo.png" alt="X.com"></a></li>
+            <li> <a href="https://www.facebook.com/victor.muita.1?mibextid=ZbWKwL"><img class="media" src="./download.jpeg" alt="facebook.com"></a></li>
+            <li> <a href="https://www.instagram.com/iam_victormuita?igsh=MXRneHE4MXd1NDVrMg=="><img class="media" src="./download (1).jpeg" alt="instagram.com"></a></li>
+        </ul>
+         </div> </li>
+           <li> <a href="">Contacts</a>
+            <div id="Contacts" class="Menu">
+         <ul class="dropdown">
+             <li><a href=""> WhatsApp: +254711 827 972</a></li>
+             <li><a href="">Phone: +254711 827 972</a></li>
+
+         </ul>
+        </div></li>
+       </ul>
+       <button id="login-button" class="login-button">Login</button>
+    </nav>
+   
+    <main>
+      <!-- defining the banner image div to hold the banner image-->
+      <div id="bannerImage">
+    </div>
+    <div class="allDivs">
+      <!--<div class="login-wrapper">
+        <div class="login-form">
+          <h2>Login</h2>
+          <form action="#">
+            <div class="email">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input class="input-box"  type="email">
+              <label for="">email</label>
+            </div>
+            <div class="password">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input class="input-box" type="password">
+              <label for="">password</label>
+            </div>
+            <div class="remember-forgot">
+              <input type="checkbox"><label for="">Remember me <a href="#">forgot password?</a></label> <br>
+              <button type="submit" class="login-button">Login</button>
+              <div class="register">don't have an account? <a href="#">Register</a></div>
+            </div>
+          </form>
+        </div>-->
+      </div>
+        <div id="userinfo"> 
+
+            <div id="About1">
+            <h3>About us</h3> 
+            <p>Welcome to RU-Travels, At RU-Travels, we believe that travel is more than just moving from one place to another—it’s an opportunity to explore new cultures, build lasting memories, and foster connections with the world around us.
+              Our mission is to offer Riara University students, faculty, and staff seamless, affordable, and enjoyable travel experiences tailored to their unique needs. 
+              Join us in discovering the world and <b>making every moment count.</b> 
+              Let RU-Travels be your gateway to unforgettable adventures. <b>Explore. Learn. Thrive.</b> 
+              Ready to start your journey? Browse our travel packages today and let us help you create memories that last a lifetime!</p>
+        </div> 
+       <!-- building the trip cost table-->
+      <div class="outer-wrap">  
+     <div class="table-wrap">
+    <section> <table class="cost">
+        <caption><u>Trip Cost</u></caption>
+        <th>Destination</th>
+        <th>Hotel cost</th>
+        <th>Meal Cost</th>
+        <th>Duration</th>
+        <th>Transit Cost</th>
+        <th>Total Cost</th>
+        <tr>
+            <td>Dubai</td>
+            <td>1000$</td>
+            <td>300$</td>
+            <td>6 Days</td>
+            <td>1200$</td>
+            <td>2500$</td>
+        </tr>
+        <tr>
+            <td>Arusha</td>
+            <td>500$</td>
+            <td>150$</td>
+            <td>7 Days</td>
+            <td>300$</td>
+            <td>950$</td>
+        </tr>
+        <tr>
+         <td>Kampala</td>
+         <td>400$</td>
+         <td>100$</td>
+         <td>7Days</td>
+         <td>200$</td>
+         <td>700$</td>
+        </tr>
+        <tr>
+            <td>Maldives</td>
+            <td>2000$</td>
+            <td>1000$</td>
+            <td>5Days</td>
+            <td>1500$</td>
+            <td>4500$</td>
+        </tr>
+        <tr>
+            <td>Cairo</td>
+            <td>1000$</td>
+            <td>500$</td>
+            <td>6 Days</td>
+            <td>800$</td>
+            <td>2300$</td>
+        </tr>
+        <tr>
+            <td>Malindi</td>
+            <td>400$</td>
+            <td>200$</td>
+            <td>7 Days</td>
+            <td>100$</td>
+            <td>700$</td>
+        </tr>
+    </table>
+    
+</section></div></div> </div>
+<!-- some inline styling on the h2 element-->
+<h2 style="font-weight: bold; text-align: center;">Registration is ongoing</h2>
+    <div class="Formhotel">
+        <div id="hotel1" class="Formhotel"><img  id="Hotel" src="./IMG_0497.jpg" alt="Aesthetic Hotel">
+            <h4 >Having Fun At The VC's Cup</h4>
+        </div>
+        <!-- building the trip registration form-->
+      <div id="Form1" class="Formhotel" >
+        <h1> Trip Registration Form</h1>
+        <h3 style="text-align: center;">Fill in Your Details:</h3>
+        <form class="form2">
+        <fieldset> 
+            <legend>Personal Information</legend>   
+         <fieldset>
+        
+            <label for="FN">First Name</label><br><input type="text" name="Name" placeholder="Your First Name" id="FN">
+         </fieldset>
+         <fieldset>
+            <label for="LN">Last Name</label><br><input type="text" name="Name" placeholder="Your Last name" id="LN">
+         </fieldset>
+         <fieldset>
+            <label for="EM">Email</label><br><input type="email" name="email" placeholder="Your Email" id="EM">
+         </fieldset>
+         <fieldset>
+            <label for="ID">National ID</label><br><input type="file" name="ID" placeholder="Your National ID" id="ID">
+         </fieldset>
+         <fieldset>
+            <label for="no">Phone Number</label><br>
+            <input type="tel" id="no" placeholder="Phone No.">
+         </fieldset>
+         <fieldset>
+            <legend>Gender</legend>
+            <input id="male" type="radio" name="gender" value="male"> <label for="male">Male</label>
+            <input id="female" type="radio" name="gender" value="female"> <label for="female">Female</label>
+            <input id="non-binary" type="radio" name="gender" value="non-binary"> <label for="non-binary">Non-Binary</label>
+         </fieldset>
+            
+        
+         
+          <fieldset>
+            <label for="destination">Your Destination</label> <br>
+           
+            <select name="destination" id="destination">
+              <option value="Choose">choose</option>
+              <option value="Maldives">Maldives</option>
+              <option value="Cairo">Cairo</option>
+              <option value="Arusha">Arusha</option>
+              <option value="Malindi">Malindi</option>
+              <option value="Dubai">Dubai</option>
+            </select>
+            </fieldset>
+            <button class="submit" id="submitForm" type="submit" value="submit" onclick="validateForm()" >Submit</button>
+          </fieldset>
+        
+         </form>
+         </div>
+
+       </div>  
+    </div> 
+    <!-- building the Quiz app and breking ground for Javascript functionality on the Quiz-->
+    <div class="quiz-container" id="quiz"><h3>Take part in our monthly quiz and stand a chance to win up to 20% discount. Good luck! </h3>
+        <div class="quiz-header">
+          <h2 id="question">Question</h2>
+        </div>
+        <ul>
+          <li>
+            <input type="radio" name="answer" id="a" class="answer" />
+            <label for="a" id="a_text">Answer a</label>
+          </li><br>
+          <li>
+            <input type="radio" name="answer" id="b" class="answer" />
+            <label for="b" id="b_text">Answer b</label>
+          </li><br>
+          <li>
+            <input type="radio" name="answer" id="c" class="answer" />
+            <label for="c" id="c_text">Answer c</label>
+          </li><br>
+          <li>
+            <input type="radio" name="answer" id="d" class="answer" />
+            <label for="d" id="d_text">Answer d</label>
+          </li>
+        </ul>
+        <button type="submit" style="align-items: center;" class="submit" id="submit">Submit</button>
+      </div>
+    </div>
+    
+   <div class="video"> <video width="320" height="240" controls>
+      <source src="./Victor_muitaGalaxyM320109112024.mp4" type="video/mp4">
+      <source src="movie.ogg" ></video>
+    </div>
+    </main>
+    <footer class="bg-rgb-203-219-237 text-center p-10">Copyright 2024 @Jet Travellers.com</footer>
+    <!-- linking the javascript code-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
